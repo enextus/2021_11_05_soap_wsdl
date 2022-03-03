@@ -1,6 +1,11 @@
 <?xml
 version="1.0"?>
-<definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://litesms.net/sms_soap.php" xmlns:soap-env="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" targetNamespace="http://litesms.net/sms_soap.php">
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/"
+             xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+             xmlns:tns="http://litesms.net/sms_soap.php"
+             xmlns:soap-env="http://schemas.xmlsoap.org/wsdl/soap/"
+             xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/"
+             targetNamespace="http://litesms.net/sms_soap.php">
     <types>
         <xsd:schema>
             <xsd:complexType name="array">
@@ -54,33 +59,40 @@ version="1.0"?>
         </operation>
     </portType>
     <binding name="AvistSmsServerBinding" type="tns:AvistSmsServerPortType">
-        <soap-env:binding xmlns="http://schemas.xmlsoap.org/wsdl/soap/" style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
-        <operation xmlns:default="http://schemas.xmlsoap.org/wsdl/soap/" name="sendSms">
-            <input xmlns:default="http://schemas.xmlsoap.org/wsdl/soap/">
-            <soap-env:body xmlns="http://schemas.xmlsoap.org/wsdl/soap/" use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
-</input>
-<output xmlns:default="http://schemas.xmlsoap.org/wsdl/soap/">
-    <soap-env:body xmlns="http://schemas.xmlsoap.org/wsdl/soap/" use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
-</output>
-</operation>
-<operation xmlns:default="http://schemas.xmlsoap.org/wsdl/soap/" name="getBalance">
-    <input xmlns:default="http://schemas.xmlsoap.org/wsdl/soap/">
-    <soap-env:body xmlns="http://schemas.xmlsoap.org/wsdl/soap/" use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
-</input>
-<output xmlns:default="http://schemas.xmlsoap.org/wsdl/soap/">
-    <soap-env:body xmlns="http://schemas.xmlsoap.org/wsdl/soap/" use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
-</output>
-</operation>
-<operation xmlns:default="http://schemas.xmlsoap.org/wsdl/soap/" name="getStatus">
-    <input xmlns:default="http://schemas.xmlsoap.org/wsdl/soap/">
-    <soap-env:body xmlns="http://schemas.xmlsoap.org/wsdl/soap/" use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
-</input>
-<output xmlns:default="http://schemas.xmlsoap.org/wsdl/soap/">
-    <soap-env:body xmlns="http://schemas.xmlsoap.org/wsdl/soap/" use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
-</output>
-</operation></binding>
+        <soap-env:binding xmlns="http://schemas.xmlsoap.org/wsdl/soap/" style="rpc"
+                          transport="http://schemas.xmlsoap.org/soap/http"/>
+        <operation name="sendSms">
+            <input>
+                <soap-env:body xmlns="http://schemas.xmlsoap.org/wsdl/soap/" use="encoded"
+                               encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </input>
+            <output>
+                <soap-env:body xmlns="http://schemas.xmlsoap.org/wsdl/soap/" use="encoded"
+                               encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </output>
+        </operation>
+        <operation name="getBalance">
+            <input>
+                <soap-env:body xmlns="http://schemas.xmlsoap.org/wsdl/soap/" use="encoded"
+                               encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </input>
+            <output>
+                <soap-env:body xmlns="http://schemas.xmlsoap.org/wsdl/soap/" use="encoded"
+                               encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </output>
+        </operation>
+        <operation name="getStatus">
+            <input>
+                <soap-env:body xmlns="http://schemas.xmlsoap.org/wsdl/soap/" use="encoded"
+                               encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </input>
+            <output>
+                <soap-env:body xmlns="http://schemas.xmlsoap.org/wsdl/soap/" use="encoded"
+                               encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </output>
+        </operation></binding>
 <service name="AvistSmsServerService">
-    <port xmlns:default="http://schemas.xmlsoap.org/wsdl/soap/" name="AvistSmsServerPort" binding="tns:AvistSmsServerBinding">
+    <port name="AvistSmsServerPort" binding="tns:AvistSmsServerBinding">
         <soap-env:address xmlns="http://schemas.xmlsoap.org/wsdl/soap/" location="http://litesms.net/sms_soap.php"/>
     </port>
 </service>
