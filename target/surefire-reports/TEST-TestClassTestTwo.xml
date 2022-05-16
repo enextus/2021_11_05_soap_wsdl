@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestClassTestTwo" time="0.058" tests="4" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestClassTestTwo" time="0.062" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/bellsoft-java17-amd64/lib"/>
-    <property name="sun.java.command" value="/home/enextus/projects/2021_11_05_soap_wsdl/target/surefire/surefirebooter8161548812524520931.jar /home/enextus/projects/2021_11_05_soap_wsdl/target/surefire 2022-05-16T16-41-06_718-jvmRun1 surefire11011702841004646942tmp surefire_08489757472128253051tmp"/>
+    <property name="sun.java.command" value="/home/enextus/projects/2021_11_05_soap_wsdl/target/surefire/surefirebooter15900750401805972619.jar /home/enextus/projects/2021_11_05_soap_wsdl/target/surefire 2022-05-16T16-52-02_028-jvmRun1 surefire7635060576621718161tmp surefire_059860462870111597tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/enextus/projects/2021_11_05_soap_wsdl/target/test-classes:/home/enextus/projects/2021_11_05_soap_wsdl/target/classes:/home/enextus/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar:/home/enextus/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar:/home/enextus/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/enextus/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/home/enextus/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/enextus/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -27,7 +27,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="/home/enextus/projects/2021_11_05_soap_wsdl/target/surefire/surefirebooter8161548812524520931.jar"/>
+    <property name="surefire.real.class.path" value="/home/enextus/projects/2021_11_05_soap_wsdl/target/surefire/surefirebooter15900750401805972619.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.3+7-LTS"/>
     <property name="user.name" value="enextus"/>
@@ -51,8 +51,8 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="mainThree" classname="TestClassTestTwo" time="0.032"/>
-  <testcase name="mainOneA" classname="TestClassTestTwo" time="0.003"/>
-  <testcase name="mainOneB" classname="TestClassTestTwo" time="0.001"/>
-  <testcase name="mainTwo" classname="TestClassTestTwo" time="0.001"/>
+  <testcase name="mainThree" classname="TestClassTestTwo" time="0.033"/>
+  <testcase name="mainOneA" classname="TestClassTestTwo" time="0.002"/>
+  <testcase name="mainOneB" classname="TestClassTestTwo" time="0.002"/>
+  <testcase name="mainTwo" classname="TestClassTestTwo" time="0.002"/>
 </testsuite>
